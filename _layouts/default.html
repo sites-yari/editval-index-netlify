@@ -25,19 +25,11 @@
       ga('send', 'pageview');
     </script>
   <script type="text/javascript" src="./EDIT VALUE® Grupo_files/saved_resource"></script><script type="text/javascript" charset="UTF-8" src="./EDIT VALUE® Grupo_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./EDIT VALUE® Grupo_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./EDIT VALUE® Grupo_files/stats.js"></script></head><div id="abineFillElement"></div>
+  <!-- netlify -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+  
   <body class="index windows older_browser" style="">
       {{content}}
-      <script>
-            if (window.netlifyIdentity) {
-              window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                  window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                  });
-                }
-              });
-            }
-        </script>
   </body>
 </html>
