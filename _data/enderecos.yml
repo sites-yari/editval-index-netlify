@@ -1,0 +1,22 @@
+endereco:
+  consultoria: 
+    normal: http://consultoria.editvalue.com/
+    en: http://consultoria.editvalue.com/en
+    es:
+  formacao: 
+    normal: http://formacao.editvalue.com/
+    en: http://formacao.editvalue.com/en
+    es: 
+  footer:
+    noticias: http://editvalue.blogspot.com/
+    con:
+      blog: http://editvalue.blogspot.pt/
+      twitter: http://twitter.com/editvalue
+      linkedin: http://www.linkedin.com/companies/edit-value-consultoria-empresarial
+      facebook: http://www.facebook.com/EDITVALUE
+    form:
+      blog: http://editvalue.blogspot.pt/
+      twitter: http://twitter.com/editvalue
+      linkedin: https://www.linkedin.com/company/edit-value-formacao-empresarial
+      facebook: https://www.facebook.com/EDITVALUE.Formacao
+  

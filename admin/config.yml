@@ -1,0 +1,59 @@
+publish_mode: editorial_workflow
+media_folder: "/uploads"
+
+backend:
+  name: git-gateway
+  repo: https://github.com/sites-yari/editval-index-netlify
+  branch: master # Branch to update (optional; defaults to master)
+  site_domain: editvalue-index.netlify.com
+
+collections:
+  - name: "data" #|=====================| DATA |====================================================|
+    label: "Data"
+    editor:
+      preview: true
+    files:
+        #---| INDEX |---
+      - name: "enderecos"
+        label: "Endereços / Links"
+        file: "_data/enderecos.yml"
+        description: Everything needed for the index
+        fields:
+          - label: Endereço / link #-------PT
+            name: endereco
+            widget: object
+            fields:
+              - label: Consultoria
+                name: consultoria
+                widget: object
+                fields:
+                  - { label: "Pagina inicial", name: "normal", widget: "string" }
+                  - { label: "Pagina En", name: "en", widget: "string" }
+              - label: Formação
+                name: formacao
+                widget: object
+                fields:
+                  - { label: "Pagina inicial", name: "normal", widget: "string" }
+                  - { label: "Pagina En", name: "en", widget: "string" }
+              - label: Footer
+                name: footer
+                widget: object
+                fields:
+                  - { label: "Noticias", name: "noticias", widget: "string" }
+                  - label: Consultoria
+                    name: con
+                    widget: object
+                    fields:
+                      - { label: "Blog", name: "blog", widget: "string" }
+                      - { label: "Twitter", name: "twitter", widget: "string" }
+                      - { label: "Linked In", name: "linkedin", widget: "string" }
+                      - { label: "FaceBook", name: "facebook", widget: "string" }
+                  - label: Formação
+                    name: form
+                    widget: object
+                    fields:
+                      - { label: "Blog", name: "blog", widget: "string" }
+                      - { label: "Twitter", name: "twitter", widget: "string" }
+                      - { label: "Linked In", name: "linkedin", widget: "string" }
+                      - { label: "FaceBook", name: "facebook", widget: "string" }
+          
