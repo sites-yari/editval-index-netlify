@@ -1,1 +1,4 @@
 /blog http://editvalue.blogspot.pt 301
+
+# redirect old subdomains to new ones.
+http://formacao.editvalue.com/* http://capitalhumano.editvalue.com/index.html 301!
